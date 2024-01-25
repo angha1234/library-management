@@ -1,43 +1,25 @@
-# library-management-system
-Library Management System Project in Python
+# Library_Management_System
+A simple and functional Library Management System Implemented in python 3 (Tkinter module)
+# Installation:
+1. Clone repository 
+2. Run `entrypoint.py' on your project directory.
+3. Ensure all dependencies are installed
 
-****Requirements and Installation****
+# Usage:
+1. Issue Book
+2. Renew Book
+3. Return Book
+4. Search Student
+5. Search Book
+6. Add User
+7. Remove User
+8. Add Student
+9. Remove Student
+10. Add Book
+11. Remove Book
 
-Use pip3 instead of pip for Linux and Mac.
+# Brief Introduction
 
-Install PyMySQL
-☛pip install PyMySQL
-
-Install Tkinter
-☛pip install tk
+A student can issue a book for 03 days.After that the student have to renew the book, If the student didn't renew the book within the return date the student have to pay fine @ Rs 1/day.A student can take a maximum of 3 books......
 
 
-
-****Install MySQL server****
-
-
-
-****Create a Database and Two Tables****
-☛Create a table "book_list" under the "library_management" database
-
-create table book_list(
-	book_id VARCHAR(10) NOT NULL,
-	book_name VARCHAR(50) NOT NULL,
-	author VARCHAR(50) NOT NULL,
-	edition VARCHAR(10) NOT NULL,
-	price Int(6) NOT NULL,
-	qty Int(4) NOT NULL,
-	PRIMARY KEY ( book_id )
-);
-
-☛Create a table "borrow_record" under the same database
-create table borrow_record(
-	book_id VARCHAR(10) NOT NULL,
-	book_name VARCHAR(50) NOT NULL,
-	stu_roll VARCHAR(15) NOT NULL,
-	stu_name VARCHAR(50) NOT NULL,
-	course VARCHAR(10) NOT NULL,
-	subject VARCHAR(30) NOT NULL,
-	issue_date date NOT NULL,
-	return_date date NOT NULL
-);
